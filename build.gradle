@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id "org.jetbrains.intellij" version "0.4.18"
+}
+
+
+intellij {
+    version '2020.1'
+    plugins 'java'
+}
+
+group 'pl.doyoung0205.idea.plugins/stepbuilder'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+//    mavenLocal()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
